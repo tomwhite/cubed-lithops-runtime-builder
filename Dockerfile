@@ -48,7 +48,7 @@ RUN unzip lithops_lambda.zip \
     && mv entry_point.py handler/
 
 RUN pip install \
-        cubed \
+        'git+https://github.com/cubed-dev/cubed.git#egg=cubed' \
         obstore
 
 # Add extra dependencies here
